@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>New Year Eve</title>
+  <link rel="stylesheet" href="css/style.css">
+
+</head>
+<body>
+
+
+
+<div class="title">
+    <h3><strong>R E G I S T E R </strong></h3>
+
+
+   
+    <br>
+    <div class="container">
+      
+      <form class="horizontal" action="display.php" method="POST" enctype="multipart/form-data">
+        
+
+
+  
+    
+        <div class="group">
+          <div class="cl"><strong>Enter Name:</strong></div>
+          <div align="left">
+            <input type="text" class="form-w" class="form-control"  placeholder="Enter Name" name="name">
+        </div>
+        </div>
+        <br>
+  
+        <div class="group">
+     
+          <div class="cl"><strong>Enter Mobile no:</strong></div>
+          <div align="left">
+            <input type="text" Maxlength="10" class="form-w" class="form-control"  placeholder="Enter Mobile" name="mobile" required onkeypress="return (event.charCode !=8 && event.charCode ==0 || (event.charCode >= 48 && event.charCode <= 57))">
+        </div>
+      </div>
+        <br>
+
+
+        <div class="group">
+         
+          <div class="cl"><strong>Enter e-mail:</strong></div>
+          <div align="left">
+            <input type="email" class="form-w" class="form-control"  placeholder="Enter Email" name="email">
+        </div>
+      </div>
+        <br>
+
+
+        <div class="group">
+          <div class="cl"><strong>Upload ID Card:</strong></div>
+          <div align="left" >
+            <input type="file" value="Upload Image"  class="form-w" class="form-control" name="upload" accept=".png,.jpeg">
+            
+          </div>
+        </div>
+        <br>
+      
+        
+        <div class="group">
+          <div class="cl"><strong>Registration type:</strong></div>
+        <div align="left">
+        <select name="type" class="res">
+          <option value="Self">Self</option>
+          <option value="Group">Group</option>
+          <option value="Corporate">Corporate</option>
+          <option value="Others">Others</option>
+        </select>
+        </div>
+        </div>
+        <br>
+
+        <div class="group">
+          <div class="cl"><strong>No of Tickets:</strong></div>
+          <div align="left">
+            <input type="number" id="quantity" class="res1" name="ticket" min="1" max="100"required onkeypress="return (event.charCode !=8 && event.charCode ==0 || (event.charCode >= 48 && event.charCode <= 57))">
+          </div>
+          </div>
+        
+
+          
+        <a class="linka" href="admin_login.php"><p>Admin login</p></a>
+
+        
+
+
+        <div class="form-group">        
+          <div class="col-sm-offset-2 col-sm-10">
+            <button type="submit"  class="btn btn-default">Submit</button>
+          </div>
+        </div>
+  
+      </form>
+    </div>
+</div>
+<!-- partial -->
+  <script src='https://code.jquery.com/jquery-2.2.4.min.js'></script><script  src="./script.js"></script>
+
+</body>
+</html>
