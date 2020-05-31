@@ -1,14 +1,38 @@
 body{
-    background-color: brown !important;
+    background-image: linear-gradient(to top, #fbc2eb 0%, #a6c1ee 100%);
 }
-.container{
-    width: 60% !important;
-    
-}
+
 
 .set
 {
     width: 200px;
     height: 200px;
     border-radius: 5% !important;
+}
+.linka{
+    text-decoration: none;
+    color:rgb(0, 0, 0);
+  }
+  .myButton {
+	box-shadow:inset 0px 39px 0px -24px #e67a73;
+	background:linear-gradient(to bottom, #e4685d 5%, #eb675e 100%);
+	background-color:#e4685d;
+	border-radius:5px;
+	border:1px solid #e4685d;;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	font-family:Arial;
+	font-size:19px;
+	padding:4px 15px;
+	text-decoration:none;
+	text-shadow:0px 1px 0px #f71e0f;
+}
+.myButton:hover {
+	background:linear-gradient(to bottom, #eb675e 5%, #e4685d 100%);
+	background-color:#eb675e;
+}
+.myButton:active {
+	position:relative;
+	top:1px;
 }

@@ -173,3 +173,196 @@ update();
 
 
 
+<?php
+
+try{
+    $con = mysqli_connect("localhost","root","event");
+    if ($con->connect_error) 
+        die("Connection failed: " . $con->connect_error);
+
+    mysqli_select_db($con, "event");
+
+    $sql = "select * from test1";
+   
+   # $sql = "insert into attendee(uid,name,mobile,email,img) values('$id','$name',$mobile,'$email','$file_name')";
+    $status = mysqli_query($con, $sql);
+    $users=mysqli_fetch_all($status,MYSQLI_ASSOC);
+    #SELECT type,sum(sno) FROM test1 GROUP BY type
+}
+  catch(PDOException $e)
+  {
+    echo $e;
+  }
+?>
+
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>New Year Eve</title>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="css/data_dis.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-sweetalert/1.0.1/sweetalert.min.js"></script>
+  <link rel="stylesheet"  href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-sweetalert/1.0.1/sweetalert.min.css">  
+<script>src="js/display_js.js"</script>
+</head>
+<body>
+
+
+<div class="container">
+
+<div class="tab" >
+<h3 class="head">Candidate detailas</h3 > 
+<a class="linka" href="chart.php"><h6 class="rig">report</h ></a>
+    <table class="table table-bordered table-dark">
+    <thead>
+      <tr>
+      <th>S No.</th>
+      <th>Uid</th>
+      <th>Name</th>
+      <th>date & time</th>
+
+      </tr>
+    </thead>
+    <tbody>
+      
+<?php foreach($users as $user): ?>
+    <tr>
+        <td><?php echo $user['sno']; ?></td>
+        <td><div type="sub" data-toggle="modal"  data-target="#bring"><?php echo $user['uid']; ?></div></td>
+        <td><?php echo $user['name']; ?></td>
+        <td><?php echo $user['date']; ?></td>
+        <td><button type="btn"  class="btn btn-success hell">hello</button></td>
+
+    </tr>
+<?php endforeach; ?>
+
+    
+      
+    </tbody>
+
+  </table>
+
+
+<!-- Modal -->
+<div class="modal fade" id="bring" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Details</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+
+      <?php
+       
+ #if(isset($_POST['sub'])  )
+ #{
+      try{
+       
+            $con = mysqli_connect("localhost","root","event");
+            if ($con->connect_error) 
+            die("Connection failed: " . $con->connect_error);
+            mysqli_select_db($con, "event");
+
+            $uid='R1590228987';
+            $sql1 = "select * from test1 where uid='$uid'";
+   
+     $stat= mysqli_query($con, $sql1);
+    $ul=mysqli_fetch_all($stat,MYSQLI_ASSOC);
+
+    
+}
+  catch(PDOException $e)
+  {
+    echo $e;
+  }
+#}
+?>
+
+      <table class="table table-bordered table-dark">
+    
+    <thead>
+
+
+
+
+
+
+    <?php foreach($ul as $u): ?>
+    <tr>
+          <td>Uid </td>
+          <td><?php echo $u['uid']; ?></td>
+    </tr>
+    <tr>
+        <td>name </td>
+        <td><?php echo $u['name']; ?></td>
+    </tr>
+    <tr>
+        <td>email </td>
+        <td><?php echo $u['email']; ?></td>
+    </tr>
+    <tr>
+        <td>mobile </td>
+        <td><?php echo $u['mobile']; ?></td>
+    </tr>
+    <tr>
+        <td>Type & Number</td>
+        <td><?php echo $u['type']; ?> - <?php echo $u['no']; ?></td>
+    </tr>
+    <tr>
+        <td>Date Time </td>
+        <td><?php echo $u['date']; ?></td>
+    </tr>
+    <tr>
+        <td>Id Card </td>
+        <td><img src="<?php echo 'id_img/'.$u['file']; ?>" class="set"/></td>
+    </tr>
+
+<?php endforeach; ?>
+      
+      
+      
+    </tbody>
+  </table>
+
+
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        
+      </div>
+    </div>
+  </div>
+</div>
+
+<div>
+</div>
+
+
+
+
+<script>
+      $(document).ready(function(){
+        $('.hell').on('click',funtion(){
+          $('#bring').model('show');
+
+        });
+      });
+
+
+    </script>
+ <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.slim.js" integrity="sha256-fNXJFIlca05BIO2Y5zh1xrShK3ME+/lYZ0j+ChxX2DA=" crossorigin="anonymous"></script>
+ <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+
+</body>
+</html>

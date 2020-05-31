@@ -1,0 +1,46 @@
+
+
+body {
+
+    background-image: linear-gradient(to top, #fbc2eb 0%, #a6c1ee 100%);
+  }
+  
+  
+.s1{
+    border-radius: 50% !important;
+    width: 100px;
+    height: 100px;
+}
+
+
+    .resize{
+      width: 200px;
+      height: 180px;
+    }
+    .curevent{
+      width: 400px;
+      height: 250px !important;
+    }
+    .eventtext{
+      font-size: 18px;
+      font-family: 'Fondamento', cursive;
+    }
+    .eventhead{
+      font-family: 'Fondamento', cursive;
+      font-size: 26px;
+    }
+    .btntxt{
+      font-family: 'Fondamento', cursive;
+    }
+    .subhead{
+   
+      font-family: 'Aclonica', sans-serif;
+    }
+    .s1{
+
+      font-family: 'Aclonica', sans-serif;
+
+    }
+    .desc{
+      font-family: 'Marck Script', cursive;
+    }

@@ -4,102 +4,203 @@
   <meta charset="UTF-8">
   <title>New Year Eve</title>
   <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="shortcut icon" type="immage/png" href="img/logo.png">
+  
 
+
+
+
+
+  <link href="https://fonts.googleapis.com/css2?family=Tangerine:wght@700&display=swap" rel="stylesheet"> 
+
+
+
+  
 </head>
 <body>
 
 
 
-<div class="title">
-    <h3><strong>R E G I S T E R </strong></h3>
+
+  <nav class="navbar navbar-light  sticky-top">
+    <a  href="index.html">
+            <img  class=" navbar-nav ml-auto" src="img/logo.png" alt="logo" width="50" height="50">
+          </a>
+          <div class="navbar-nav ml-auto">
+               <a class="text-decoration-none nav-item nav-link" href="admin_login.php"><strong><span class="glyphicon glyphicon-log-in sty"></span>&nbsp;&nbsp;Admin Login</strong></a> 
+          </div>
+    </nav>
 
 
-   
-    <br>
-    <div class="container">
-      
-      <form class="horizontal" action="display.php" method="POST" enctype="multipart/form-data">
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+<h1 class="defh1">The New year Masquerade</h1>
+
+
+
+
+   <div class="container con-size">
+    <div class="row  justify-content-center">
+        <div class="col-lg-10 bg light rounded my-2 py-2">
+          <h3 class="text-center text-dark">Register Now !!!</h3>
+          <hr>
+
+
+
+
+
+          <form class="horizontal" action="display.php" method="POST" enctype="multipart/form-data">
         
-
-
-  
-    
-        <div class="group">
-          <div class="cl"><strong>Enter Name:</strong></div>
-          <div align="left">
-            <input type="text" class="form-w" class="form-control"  placeholder="Enter Name" name="name">
-        </div>
-        </div>
-        <br>
-  
-        <div class="group">
-     
-          <div class="cl"><strong>Enter Mobile no:</strong></div>
-          <div align="left">
-            <input type="text" Maxlength="10" class="form-w" class="form-control"  placeholder="Enter Mobile" name="mobile" required onkeypress="return (event.charCode !=8 && event.charCode ==0 || (event.charCode >= 48 && event.charCode <= 57))">
-        </div>
-      </div>
-        <br>
-
-
-        <div class="group">
+            <div class="group">
+              <div class="cl"><strong>Enter Name:</strong></div>
+              <div align="left">
+                <input type="text" class="form-w" class="form-control"  placeholder="Enter Name" name="name" required>
+            </div>
+            </div>
+            <br>
+      
+            <div class="group">
          
-          <div class="cl"><strong>Enter e-mail:</strong></div>
-          <div align="left">
-            <input type="email" class="form-w" class="form-control"  placeholder="Enter Email" name="email">
-        </div>
-      </div>
-        <br>
-
-
-        <div class="group">
-          <div class="cl"><strong>Upload ID Card:</strong></div>
-          <div align="left" >
-            <input type="file" value="Upload Image"  class="form-w" class="form-control" name="upload" accept=".png,.jpeg">
-            
+              <div class="cl"><strong>Enter Mobile no:</strong></div>
+              <div align="left">
+                <input type="text" Maxlength="10" class="form-w" required class="form-control"  placeholder="Enter Mobile" name="mobile" required onkeypress="return (event.charCode !=8 && event.charCode ==0 || (event.charCode >= 48 && event.charCode <= 57))">
+            </div>
           </div>
-        </div>
-        <br>
-      
-        
-        <div class="group">
-          <div class="cl"><strong>Registration type:</strong></div>
-        <div align="left">
-        <select name="type" class="res">
-          <option value="Self">Self</option>
-          <option value="Group">Group</option>
-          <option value="Corporate">Corporate</option>
-          <option value="Others">Others</option>
-        </select>
-        </div>
-        </div>
-        <br>
-
-        <div class="group">
-          <div class="cl"><strong>No of Tickets:</strong></div>
-          <div align="left">
-            <input type="number" id="quantity" class="res1" name="ticket" min="1" max="100"required onkeypress="return (event.charCode !=8 && event.charCode ==0 || (event.charCode >= 48 && event.charCode <= 57))">
+            <br>
+    
+    
+            <div class="group">
+             
+              <div class="cl"><strong>Enter e-mail:</strong></div>
+              <div align="left">
+                <input type="email" class="form-w" class="form-control" required placeholder="Enter Email" name="email">
+            </div>
           </div>
-          </div>
-        
-
+            <br>
+    
+    
+            <div class="group">
+              <div class="cl"><strong>Upload ID Card:</strong></div>
+              <div align="left" >
+                <input type="file" value="Upload Image"  class="form-w" required class="form-control" name="upload" accept=".png,.jpeg">
+                
+              </div>
+            </div>
+            <br>
           
-        <a class="linka" href="admin_login.php"><p>Admin login</p></a>
+            
+            <div class="group">
+              <div class="cl"><strong>Registration type & no of Tickets:</strong></div>
+            <div align="left">
+            <select name="type" required class="res" onchange="myFunction(event)">
+              <option></option>
+              <option value="Self">Self</option>
+              <option value="Group">Group</option>
+              <option value="Corporate">Corporate</option>
+              <option value="Others">Others</option>
+            </select>&nbsp;&emsp;
+            <input type="number" id="myText" class="res1" name="ticket" min="1" max="100"required onkeypress="return (event.charCode !=8 && event.charCode ==0 || (event.charCode >= 48 && event.charCode <= 57))">
+              
+            </div>
+            </div>
+            <br>      
+            <br>
+    
+    
+            <div class="form-group">        
+              <div class="col-sm-offset-2 col-sm-10">
+                <button type="submit" name="first" class="btn btn-success ">Proceed</button>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <button type="reset" class="btn btn-dark ">Clear</button>
+              </div>
+            </div>
+      
+          </form>
 
-        
 
 
-        <div class="form-group">        
-          <div class="col-sm-offset-2 col-sm-10">
-            <button type="submit"  class="btn btn-default">Submit</button>
-          </div>
+
+
+
+
+
+
+
+
+
         </div>
-  
-      </form>
     </div>
+
 </div>
-<!-- partial -->
-  <script src='https://code.jquery.com/jquery-2.2.4.min.js'></script><script  src="./script.js"></script>
+
+
+
+
+
+
+
+
+
+
+<footer>
+  <hr>
+
+<div class="text-center">
+    <div class="row">
+      <div class="col-md-6">
+        <a href="https://www.facebook.com" target="blank" class="fa fa-facebook"></a>
+        <a href="https://twitter.com" target="blank"class="fa fa-twitter"></a>
+        <a href="https://www.instagram.com" target="blank" class="fa fa-instagram"></a>
+      </div>
+      <div class="col-md-6">
+        <div class="list_st">
+       <a href="aboutus.html" target="blank"><span><strong>AboutUs</strong></a></span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <a href="#" target="blank"><span><strong>ContactUs</strong></span></a></span>
+      </div>
+
+      </div>
+    </div>
+
+</div>
+
+
+  
+  <div class="footer-copyright text-center py-3">
+    <small style="color:grey" class="copyright">© 2020 Copyright:<a href=""> duskey.me</a></small>
+  </div>
+
+
+</footer>
+<script>
+function myFunction(e) {
+  if(e.target.value=='Self')
+  {
+    var v1='1';
+    document.getElementById("myText").value = v1
+  }
+  else{
+    var v1=' ';
+    document.getElementById("myText").value = v1
+  }
+}
+
+</script>
+
 
 </body>
 </html>

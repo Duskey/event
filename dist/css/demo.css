@@ -1,21 +1,10 @@
-.tab{
-    padding:5px 5px 5px 5px;
-    padding-right: 100px !important;
+.set{
+text-align: left;
 }
-.head{
-    text-align: center !important;
-}
-.rig{
-    text-align: right;
-}
-.linka{
-    text-decoration: none;
-    color:rgb(0, 0, 0);
-  }
-  body {
+body {
 
     scroll-behavior: smooth;
-    background-image: linear-gradient(to top, #fbc2eb 0%, #a6c1ee 100%) !important;
+    background-image: linear-gradient(to top, #fbc2eb 0%, #a6c1ee 100%);
   }
   .fa {
     padding-top: 10px;
