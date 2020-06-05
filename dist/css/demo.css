@@ -1,5 +1,38 @@
+.thead{
+
+    text-align: left !important;
+    color: rgb(0, 0, 0);
+  
+    font-weight:bold;
+  
+    font-family: 'Kaushan Script', cursive;
+  
+}
+
+
+.reg{
+  font-family: 'Piedra', cursive;
+  font-size: 35px;
+}
+
+
+.myfoot{
+  font-family: 'Oleo Script Swash Caps', cursive;
+  font-size: 30px;
+}
+.sty{
+  font-size: 20px;
+  font-family: 'Kelly Slab', cursive;
+}
 .set{
-text-align: left;
+
+  width:300px !important;
+  height: 200px !important;
+  border-radius: 5%;
+}
+.tdata{
+     font-family: 'ZCOOL XiaoWei', serif;
+    
 }
 body {
 
@@ -35,3 +68,38 @@ body {
     background: #125688;
     color: white;
   }
+
+
+  .as{
+    margin-right: 150px;
+    font-size: 22px !important;
+  }
+  .cs{
+   
+    font-size: 22px !important;
+  }
+  /***********responsive *********/
+  @media all and (max-width: 480px) { 
+  
+  
+    .fa {
+      padding-top: 10px;
+      font-size: 15px !important;
+      width: 30px;
+      height:30px;
+  
+    }
+    
+  
+    .cs{
+   
+      font-size: 18px !important;
+    }
+    .as{
+      margin-right: 30px;
+      font-size: 18px !important;
+    }
+  
+  
+  
+  }  

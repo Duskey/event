@@ -1,7 +1,6 @@
 <?php
-
-    $con = mysqli_connect("localhost","root","event");
-    mysqli_select_db($con, "event");
+#to delete the recor on the basis of id.
+      require 'connect.php';
     if(isset($_POST['deletedata']))
     {
             $name=$_POST['name_id'];
@@ -37,25 +36,3 @@
 ?>
 
 
-
-<?php
-
-try{
-    $con = mysqli_connect("localhost","root","event");
-    if ($con->connect_error) 
-        die("Connection failed: " . $con->connect_error);
-
-    mysqli_select_db($con, "event");
-
-    $sql = "select * from test1";
-   
-   # $sql = "insert into attendee(uid,name,mobile,email,img) values('$id','$name',$mobile,'$email','$file_name')";
-    $status = mysqli_query($con, $sql);
-    $users=mysqli_fetch_all($status,MYSQLI_ASSOC);
-    #SELECT type,sum(sno) FROM test1 GROUP BY type
-}
-  catch(PDOException $e)
-  {
-    echo $e;
-  }
-?>

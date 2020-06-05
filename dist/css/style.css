@@ -3,7 +3,12 @@ body {
 
   background-image: linear-gradient(to top, #fbc2eb 0%, #a6c1ee 100%);
 }
-
+.reg{
+  font-family: 'Piedra', cursive;
+  font-size: 40px;
+  font-weight: 60;
+  
+}
 
 
 .title h3 {
@@ -41,13 +46,18 @@ body {
   color: rgb(0, 0, 0);
   padding-bottom: 5px;
   
-}
 
+  font-family: 'Kaushan Script', cursive;
+}
+.btn{
+  font-family: 'Fondamento', cursive !important;
+}
 .res{
-  width: 150px !important;
+  width: 110px !important;
 }
 .res1{
-  width: 100px;
+  width: 70px;
+  margin-left: 10px;
 }
 .linka{
   text-decoration: none;
@@ -56,9 +66,62 @@ body {
 .con-size{
   width: 50% !important;
 }
+.btnproc{
+  margin-right: 20px;
+}
 
+
+
+
+.as{
+  margin-right: 150px;
+  font-size: 22px !important;
+}
+.cs{
+ 
+  font-size: 22px !important;
+}
 /***********responsive *********/
 @media all and (max-width: 480px) { 
+
+
+  .fa {
+    padding-top: 10px;
+    font-size: 15px !important;
+    width: 30px;
+    height:30px;
+
+  }
+  
+
+  .cs{
+ 
+    font-size: 18px !important;
+  }
+  .as{
+    margin-right: 30px;
+    font-size: 18px !important;
+  }
+
+
+
+
+
+
+  .reg{
+  
+    font-size: 23px;
+    font-weight: 25;
+    
+  }
+  
+
+.defh1{
+
+  font-size: 35px !important;
+  font-weight: 75;
+ 
+}
 
   .form-w{
     width: 200px;
@@ -67,7 +130,14 @@ body {
   .title{
     padding-top: 130px;
   }
-  
+  .res1{
+    
+    margin-left: 0px;
+    margin-top: 10px;
+  }
+  .btnproc{
+    margin-right: 3px;
+  }
 }
 
 .fa {
@@ -107,16 +177,20 @@ font-size: 20px;
 
 .sty{
   font-size: 20px;
+  font-family: 'Kelly Slab', cursive;
+}
+.myfoot{
+  font-family: 'Oleo Script Swash Caps', cursive;
+  font-size: 30px;
 }
 
 .defh1{
 
   font-family: 'Tangerine', cursive;
-  font-size: 80px;
+  font-size: 90px;
   font-weight: 100;
   text-align: center;
+ 
 }
 
 
-
-<script id="gs-sdk" src='//www.buildquickbots.com/botwidget/v3/demo/static/js/sdk.js?v=3' key="794041d1-ef52-4e64-82e2-60b9a3eddc6c" ></script>

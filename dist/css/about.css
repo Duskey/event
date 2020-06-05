@@ -1,5 +1,3 @@
-
-
 body {
 
     background-image: linear-gradient(to top, #fbc2eb 0%, #a6c1ee 100%);
@@ -11,11 +9,16 @@ body {
     width: 100px;
     height: 100px;
 }
+.subh{
 
+  font-size: 30px;
+  font-family: 'Fredoka One', cursive;
+}
 
     .resize{
-      width: 200px;
-      height: 180px;
+
+      height: 200px;
+      width: 150px;
     }
     .curevent{
       width: 400px;
@@ -27,7 +30,7 @@ body {
     }
     .eventhead{
       font-family: 'Fondamento', cursive;
-      font-size: 26px;
+      font-size: 18px;
     }
     .btntxt{
       font-family: 'Fondamento', cursive;
@@ -44,3 +47,4 @@ body {
     .desc{
       font-family: 'Marck Script', cursive;
     }
+ 

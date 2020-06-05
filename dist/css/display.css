@@ -2,11 +2,32 @@ body{
     background-image: linear-gradient(to top, #fbc2eb 0%, #a6c1ee 100%);
 }
 
+.cl{
 
+	text-align: left !important;
+  color: rgb(0, 0, 0);
+
+  
+
+  font-family: 'Kaushan Script', cursive;
+}
+
+
+.reg{
+	font-family: 'Piedra', cursive;
+	color: #ff006c !important;
+	
+  }
+  .cld{
+	font-family: 'ZCOOL XiaoWei', serif;
+  }
+.btn{
+	font-family: 'Fondamento', cursive !important;
+  }
 .set
 {
-    width: 200px;
-    height: 200px;
+    width:300px !important;
+    height: 200px !important;
     border-radius: 5% !important;
 }
 .linka{
@@ -18,7 +39,6 @@ body{
 	background:linear-gradient(to bottom, #e4685d 5%, #eb675e 100%);
 	background-color:#e4685d;
 	border-radius:5px;
-	border:1px solid #e4685d;;
 	display:inline-block;
 	cursor:pointer;
 	color:#ffffff;
@@ -36,3 +56,5 @@ body{
 	position:relative;
 	top:1px;
 }
+
+

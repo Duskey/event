@@ -2,38 +2,53 @@
 <html lang="en" >
 <head>
   <meta charset="UTF-8">
-  <title>New Year Eve</title>
+  <title>The New year Masquerade - Register!</title>
   <link rel="stylesheet" href="css/style.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+  <!---bootstrap--->
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-  <link rel="shortcut icon" type="immage/png" href="img/logo.png">
+  <link rel="shortcut icon" type="image/png" href="img/logo.png">
   
+  <!---Chat bot--->
+  <script id="gs-sdk" src='//www.buildquickbots.com/botwidget/v3/demo/static/js/sdk.js?v=3' key="794041d1-ef52-4e64-82e2-60b9a3eddc6c" ></script>
 
-
-
-
-
+<!---font style--->
   <link href="https://fonts.googleapis.com/css2?family=Tangerine:wght@700&display=swap" rel="stylesheet"> 
 
 
-
+  <link href="https://fonts.googleapis.com/css2?family=Kaushan+Script&family=Lobster&display=swap" rel="stylesheet"> 
   
+  
+  <link href="https://fonts.googleapis.com/css2?family=Piedra&display=swap" rel="stylesheet"> 
+
+  <!---button--->
+  <link href="https://fonts.googleapis.com/css2?family=Aclonica&family=Fondamento:ital@1&family=Lobster&display=swap" rel="stylesheet"> 
+
+
+
+  <!---nav bar-->
+  <link href="https://fonts.googleapis.com/css2?family=Cookie&family=Dancing+Script&family=Kelly+Slab&family=Piedra&family=ZCOOL+XiaoWei&display=swap" rel="stylesheet"> 
+
+  <!--footer-->
+  <link href="https://fonts.googleapis.com/css2?family=Cookie&family=Dancing+Script&family=Kelly+Slab&family=Oleo+Script+Swash+Caps&family=Piedra&family=ZCOOL+XiaoWei&display=swap" rel="stylesheet"> 
+
 </head>
 <body>
 
 
 
-
+<!---nav bar-->
   <nav class="navbar navbar-light  sticky-top">
     <a  href="index.html">
             <img  class=" navbar-nav ml-auto" src="img/logo.png" alt="logo" width="50" height="50">
           </a>
           <div class="navbar-nav ml-auto">
-               <a class="text-decoration-none nav-item nav-link" href="admin_login.php"><strong><span class="glyphicon glyphicon-log-in sty"></span>&nbsp;&nbsp;Admin Login</strong></a> 
+               <a class="text-decoration-none nav-item nav-link sty" href="admin_login.php"><strong><span class="glyphicon glyphicon-log-in "></span>&nbsp;&nbsp;Admin Login</strong></a> 
           </div>
     </nav>
-
+<!---nav bar-->
 
 
 
@@ -49,7 +64,7 @@
 
 
   
-<h1 class="defh1">The New year Masquerade</h1>
+<h1 class="defh1"><strong>The New Year Masquerade....</strong></h1>
 
 
 
@@ -57,90 +72,55 @@
    <div class="container con-size">
     <div class="row  justify-content-center">
         <div class="col-lg-10 bg light rounded my-2 py-2">
-          <h3 class="text-center text-dark">Register Now !!!</h3>
+          <h3 class="text-center text-dark reg" >Register Now !!!</h3>
           <hr>
-
-
-
-
-
+          <!---form--->
           <form class="horizontal" action="display.php" method="POST" enctype="multipart/form-data">
         
-            <div class="group">
-              <div class="cl"><strong>Enter Name:</strong></div>
-              <div align="left">
-                <input type="text" class="form-w" class="form-control"  placeholder="Enter Name" name="name" required>
-            </div>
-            </div>
-            <br>
-      
-            <div class="group">
-         
-              <div class="cl"><strong>Enter Mobile no:</strong></div>
-              <div align="left">
-                <input type="text" Maxlength="10" class="form-w" required class="form-control"  placeholder="Enter Mobile" name="mobile" required onkeypress="return (event.charCode !=8 && event.charCode ==0 || (event.charCode >= 48 && event.charCode <= 57))">
-            </div>
+           
+
+          <div class="form-group">
+          <div class="cl"><strong>Enter Name:</strong></div>
+            <input type="text" class="form-w" class="form-control"  placeholder="Enter Name" name="name" required>
           </div>
-            <br>
-    
-    
-            <div class="group">
-             
-              <div class="cl"><strong>Enter e-mail:</strong></div>
-              <div align="left">
-                <input type="email" class="form-w" class="form-control" required placeholder="Enter Email" name="email">
-            </div>
-          </div>
-            <br>
-    
-    
-            <div class="group">
-              <div class="cl"><strong>Upload ID Card:</strong></div>
-              <div align="left" >
-                <input type="file" value="Upload Image"  class="form-w" required class="form-control" name="upload" accept=".png,.jpeg">
-                
-              </div>
-            </div>
-            <br>
           
-            
-            <div class="group">
+          <div class="form-group">
+          <div class="cl"><strong>Enter Mobile no:</strong></div>
+            <input type="text" Maxlength="10" class="form-w" required class="form-control"  placeholder="Enter Mobile" name="mobile" required onkeypress="return (event.charCode !=8 && event.charCode ==0 || (event.charCode >= 48 && event.charCode <= 57))">
+          </div>
+          
+          <div class="form-group">
+          <div class="cl"><strong>Enter e-mail:</strong></div>
+              <input type="email" class="form-w" class="form-control" required placeholder="Enter Email" name="email">
+          </div>
+
+          <div class="group">
+              <div class="cl"><strong>Upload ID Card:</strong></div>
+                <input type="file" value="Upload Image"  class="form-w" required class="form-control" name="upload" accept=".png,.jpeg">
+                <small  class="form-text text-muted">Image size Must be below 500kb and of png or jpeg type. </small>
+
+          </div>
+          <br>
+          <div class="group">
               <div class="cl"><strong>Registration type & no of Tickets:</strong></div>
-            <div align="left">
             <select name="type" required class="res" onchange="myFunction(event)">
               <option></option>
               <option value="Self">Self</option>
               <option value="Group">Group</option>
               <option value="Corporate">Corporate</option>
               <option value="Others">Others</option>
-            </select>&nbsp;&emsp;
-            <input type="number" id="myText" class="res1" name="ticket" min="1" max="100"required onkeypress="return (event.charCode !=8 && event.charCode ==0 || (event.charCode >= 48 && event.charCode <= 57))">
+            </select>
+            <input type="number" id="myText" class="res1" name="ticket" min="1" max="150"required onkeypress="return (event.charCode !=8 && event.charCode ==0 || (event.charCode >= 48 && event.charCode <= 57))">
               
             </div>
-            </div>
-            <br>      
             <br>
-    
-    
-            <div class="form-group">        
-              <div class="col-sm-offset-2 col-sm-10">
-                <button type="submit" name="first" class="btn btn-success ">Proceed</button>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <button type="submit" name="first" class="btn btn-success btnproc">Proceed</button>
                 <button type="reset" class="btn btn-dark ">Clear</button>
-              </div>
-            </div>
-      
+
+
+
           </form>
-
-
-
-
-
-
-
-
-
-
-
+        <!---form--->
 
         </div>
     </div>
@@ -154,7 +134,7 @@
 
 
 
-
+<!---footer--->
 
 <footer>
   <hr>
@@ -168,9 +148,9 @@
       </div>
       <div class="col-md-6">
         <div class="list_st">
-       <a href="aboutus.html" target="blank"><span><strong>AboutUs</strong></a></span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-        <a href="#" target="blank"><span><strong>ContactUs</strong></span></a></span>
+       <a  class="text-decoration-none" href="aboutus.html" target="blank"><span class="myfoot as"><strong>AboutUs</strong></a></span>
+
+        <a class="text-decoration-none" href="#" target="blank"><span class="myfoot cs"><strong>ContactUs</strong></span></a></span>
       </div>
 
       </div>
@@ -181,11 +161,12 @@
 
   
   <div class="footer-copyright text-center py-3">
-    <small style="color:grey" class="copyright">© 2020 Copyright:<a href=""> duskey.me</a></small>
+    <small style="color:grey" class="copyright">© 2020 Copyright: Duskey</small>
   </div>
 
 
 </footer>
+<!---Script to auto set ticket value  when self is selected--->
 <script>
 function myFunction(e) {
   if(e.target.value=='Self')

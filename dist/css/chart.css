@@ -1,3 +1,11 @@
+.sty{
+  font-size: 20px;
+  font-family: 'Kelly Slab', cursive;
+}
+.myfoot{
+  font-family: 'Oleo Script Swash Caps', cursive;
+  font-size: 30px;
+}
 
 .fa {
   padding-top: 10px;
@@ -33,5 +41,51 @@
   height: 900px;
 }
 .pie_lable{
-  text-align: center !important;
+ 
+  font-size: 32px;
+  font-family: 'Archivo Black', sans-serif;
+}
+
+
+
+.as{
+  margin-right: 150px;
+  font-size: 22px !important;
+}
+.cs{
+ 
+  font-size: 22px !important;
+}
+.pie{
+  width: 800px !important;
+  height: 700px !important;
+}
+
+/***********responsive *********/
+@media all and (max-width: 480px) { 
+
+
+  .fa {
+    padding-top: 10px;
+    font-size: 15px !important;
+    width: 30px;
+    height:30px;
+
+  }
+  .pie_lable{
+    font-size: 20px;
+
+  }
+
+  .cs{
+ 
+    font-size: 18px !important;
+  }
+  .as{
+    margin-right: 30px;
+    font-size: 18px !important;
+  }
+
+
+
 }

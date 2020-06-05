@@ -12,10 +12,37 @@
     text-decoration: none;
     color:rgb(0, 0, 0);
   }
+
+  .cl{
+
+    text-align: left !important;
+    color: rgb(0, 0, 0);
+  
+    
+  
+    font-family: 'Kaushan Script', cursive;
+  }
+  .myfoot{
+    font-family: 'Oleo Script Swash Caps', cursive;
+    font-size: 30px;
+  }
+  .cld{
+    font-family: 'ZCOOL XiaoWei', serif;
+    }
   body {
 
     scroll-behavior: smooth;
     background-image: linear-gradient(to top, #fbc2eb 0%, #a6c1ee 100%) !important;
+  }
+  .sty{
+    font-size: 20px;
+    font-family: 'Kelly Slab', cursive;
+  }
+  .reg{
+    font-family: 'Piedra', cursive;
+    font-size: 40px;
+    font-weight: 60;
+    
   }
   .fa {
     padding-top: 10px;
@@ -46,3 +73,36 @@
     background: #125688;
     color: white;
   }
+  .as{
+    margin-right: 150px;
+    font-size: 22px !important;
+  }
+  .cs{
+   
+    font-size: 22px !important;
+  }
+  /***********responsive *********/
+  @media all and (max-width: 480px) { 
+  
+  
+    .fa {
+      padding-top: 10px;
+      font-size: 15px !important;
+      width: 30px;
+      height:30px;
+  
+    }
+    
+  
+    .cs{
+   
+      font-size: 18px !important;
+    }
+    .as{
+      margin-right: 30px;
+      font-size: 18px !important;
+    }
+  
+  
+  
+  }  

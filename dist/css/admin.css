@@ -31,20 +31,49 @@ body {
   text-align: center;
   text-shadow: 0 -1px 0 rgba(0,0,0,0.2), 0 1px 0 #fff;
 }
-input[type="password"], input[type="text"] {
+.email {
   border: 1px solid #a1a3a3;
   border-radius: 4px;
   box-shadow: 0 1px #fff;
   box-sizing: border-box;
   color: #696969;
   height: 39px;
-  margin: 20px 0 0 38px;
+  margin: 2px 0 2px  38px;
   padding-left: 37px;
   transition: box-shadow 0.3s;
   width: 240px;
   background-color: #ffffff;
   opacity: 0.7;
 }
+.pass {
+  border: 1px solid #a1a3a3;
+  border-radius: 4px;
+  box-shadow: 0 1px #fff;
+  box-sizing: border-box;
+  color: #696969;
+  height: 39px;
+  margin: 2px 0 0 38px;
+  padding-left: 37px;
+  transition: box-shadow 0.3s;
+  width: 240px;
+  background-color: #ffffff;
+  opacity: 0.7;
+}
+.btn{
+  font-family: 'Fondamento', cursive !important;
+}
+
+.cl{
+
+padding-left: 40px;
+  color: rgb(0, 0, 0);
+  padding-bottom: 5px;
+  
+
+  font-family: 'Kaushan Script', cursive;
+}
+
+
 input[type="password"]:focus, input[type="text"]:focus {
   box-shadow: 0 0 4px 1px rgba(55, 166, 155, 0.3);
   outline: 0;
@@ -108,6 +137,12 @@ input[type="submit"]:active {
   background-color: #3B5998;
 	padding: 0;
 }
+
+
+.myfoot{
+  font-family: 'Oleo Script Swash Caps', cursive;
+  font-size: 30px;
+}
 .avatar
 {
   width:100px;
@@ -148,4 +183,38 @@ margin: 10px auto;
 .list_st{
 padding-top: 15px;
 font-size: 20px;
+}
+
+.as{
+  margin-right: 150px;
+  font-size: 22px !important;
+}
+.cs{
+ 
+  font-size: 22px !important;
+}
+/***********responsive *********/
+@media all and (max-width: 480px) { 
+
+
+  .fa {
+    padding-top: 10px;
+    font-size: 15px !important;
+    width: 30px;
+    height:30px;
+
+  }
+  
+
+  .cs{
+ 
+    font-size: 18px !important;
+  }
+  .as{
+    margin-right: 30px;
+    font-size: 18px !important;
+  }
+
+
+
 }

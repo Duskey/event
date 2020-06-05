@@ -1,0 +1,43 @@
+	Tech Used
+	---------	
+	
+1. html,css,bootstarp,javascript (frontend)
+2. php sql (backend)
+3. pie chart (google chart API)
+4. Chat bot (gupshup.io API)
+5. table Search (datatables.net API)
+=============================================================
+	Features
+	--------
+	
+1. Registration form.
+2. Data Display page.
+3. Success page contain unique registration number.
+4. Adminlogin 
+5. Registerd candidate list page
+6. View candiate page.
+7. Chart page.
+8. About us page 
+9. logout functionality.
+8. Chat bot Integrated.
+==============================================================
+	Deployment Instruction
+	----------------------
+	
+Step 1:- Install Xampp cross-platform web server(localhost) fom this website accordint to the OS fromn given link 
+	  or u can find it in res folder in the zip itself.
+	  link:- https://www.apachefriends.org/download.html
+	  
+Step 2:- copy the dist folder into the htdocs folder.
+
+	  	
+Step 3:- Import the database in which the data will be stored when someone will register. While importing make sure that the databse name 	is event.
+
+Step 4:- Open Dist folder opne connect.php file and change the id password. 
+
+Step 5:- Now go to your browser and type http://localhost/dist/
+
+Step 6:- Fill the form  and the data will be fetched and stored into database.
+
+Step 7:- You can go to admin login to check all details. Some id and passwords are user- root pass-event, user- root password-demo.
+
