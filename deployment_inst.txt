@@ -1,5 +1,5 @@
-	Tech Used
-	---------	
+Technologies Used
+	------------------	
 	
 1. html,css,bootstarp,javascript (frontend)
 2. php sql (backend)
@@ -12,32 +12,31 @@
 	
 1. Registration form.
 2. Data Display page.
-3. Success page contain unique registration number.
+3. Success page containing unique registration number.
 4. Adminlogin 
-5. Registerd candidate list page
+5. Registered candidate list page.
 6. View candiate page.
 7. Chart page.
-8. About us page 
+8. About us page. 
 9. logout functionality.
 8. Chat bot Integrated.
 ==============================================================
 	Deployment Instruction
 	----------------------
 	
-Step 1:- Install Xampp cross-platform web server(localhost) fom this website accordint to the OS fromn given link 
-	  or u can find it in res folder in the zip itself.
+Step 1:- Install Xampp cross-platform web server(localhost) fom this website according to the OS fromn given link 
+	  or u can find it in res folder of the zip itself.
 	  link:- https://www.apachefriends.org/download.html
 	  
-Step 2:- copy the dist folder into the htdocs folder.
+Step 2:- copy the dist folder into the htdocs folder of Xampp.
 
 	  	
-Step 3:- Import the database in which the data will be stored when someone will register. While importing make sure that the databse name 	is event.
+Step 3:- Import the database in which the data will be stored when someone will register. While importing make sure that the database name is 'event'.
 
-Step 4:- Open Dist folder opne connect.php file and change the id password. 
+Step 4:- Open dist folder open connect.php file and change the id password. 
 
 Step 5:- Now go to your browser and type http://localhost/dist/
 
-Step 6:- Fill the form  and the data will be fetched and stored into database.
+Step 6:- Fill the form and the data will be fetched and stored into database.
 
-Step 7:- You can go to admin login to check all details. Some id and passwords are user- root pass-event, user- root password-demo.
-
+Step 7:- You can go to admin login to check all details. Some id and passwords are: user- root, pass-event; user- root, password-demo.
